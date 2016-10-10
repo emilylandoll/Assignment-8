@@ -1,5 +1,5 @@
 # This analysis analyzes house elf data from Dr. Granger.
-houseelf_analysis <- read.csv("./data/houseelf_earlength_dna_data_1.csv", header = TRUE, sep = "" )
+houseelf_analysis <- read.csv("./data/houseelf_earlength_dna_data_1.csv")
 
 # Problem 6
 install.packages("stringr")
