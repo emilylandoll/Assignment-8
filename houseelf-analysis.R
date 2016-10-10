@@ -13,3 +13,8 @@ gc_content <- function(sequence){
   return(gc_count)}
 print(gc_content(str_to_lower(houseelf_analysis$dnaseq)))
 
+#Problem 7
+source('classify_ear_size.R')
+ear_length_classify <- get_size_class(houseelf_analysis$earlength)
+classify_table <- data.frame(houseelf_analysis$id, ear_length_classify, gc_content((str_to_lower(houseelf_analysis$dnaseq))))
+write.csv(classify_table)
